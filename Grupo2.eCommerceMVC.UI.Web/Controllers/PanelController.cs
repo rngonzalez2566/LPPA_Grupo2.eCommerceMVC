@@ -8,7 +8,7 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
 {
     public class PanelController : Controller
     {
-        // GET: Panel
+        
         public ActionResult Index()
         {
             return View();

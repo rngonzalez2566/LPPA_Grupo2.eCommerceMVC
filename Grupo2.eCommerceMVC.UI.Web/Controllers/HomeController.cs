@@ -6,9 +6,11 @@ using System.Web.Mvc;
 
 namespace Grupo2.eCommerceMVC.UI.Web.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         // GET: Home
+        [HttpGet]
         public ActionResult Index()
         {
             return View();

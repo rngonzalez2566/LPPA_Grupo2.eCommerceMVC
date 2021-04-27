@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Grupo2.eCommerceMVC.UI.Web.Controllers
 {
+    [AllowAnonymous]
     public class RegistroController : Controller
     {
         // GET: Registro
