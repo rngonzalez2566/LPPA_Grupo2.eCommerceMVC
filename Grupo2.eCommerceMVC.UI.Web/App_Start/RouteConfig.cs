@@ -18,6 +18,25 @@ namespace Grupo2.eCommerceMVC.UI.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+            name: "Panel",
+            url: "{controller}/{action}/{id}",
+            defaults: new { controller = "Panel", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+            name: "Login",
+            url: "{controller}/{action}/{id}",
+            defaults: new { controller = "Login", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+            name: "Registro",
+            url: "{controller}/{action}/{id}",
+            defaults: new { controller = "Registro", action = "Index", id = UrlParameter.Optional }
+            );
+
         }
     }
 }

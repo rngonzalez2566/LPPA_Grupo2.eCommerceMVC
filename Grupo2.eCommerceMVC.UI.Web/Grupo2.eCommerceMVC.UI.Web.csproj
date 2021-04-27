@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="css\style_login_registro.css" />
     <Content Include="css\style_panel.css" />
     <Content Include="Global.asax" />
     <Content Include="images\Carnes.jpeg" />
@@ -110,16 +111,21 @@
     <Content Include="images\imagen2.jpg" />
     <Content Include="images\imagen3.jpg" />
     <Content Include="images\Lacteos.jpg" />
+    <Content Include="images\login.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\Panaderia.jpg" />
     <Content Include="js\jquery-3.6.0.min.js" />
+    <None Include="Views\Login\index.cshtml" />
+    <None Include="Views\Registro\index.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
