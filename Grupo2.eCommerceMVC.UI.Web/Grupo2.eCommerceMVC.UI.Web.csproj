@@ -132,6 +132,7 @@
     <Content Include="js\jquery-3.6.0.min.js" />
     <None Include="Views\Login\index.cshtml" />
     <None Include="Views\Registro\index.cshtml" />
+    <Content Include="js\main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

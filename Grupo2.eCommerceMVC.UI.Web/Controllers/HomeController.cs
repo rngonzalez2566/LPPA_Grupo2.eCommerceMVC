@@ -13,6 +13,8 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            //Session["sesion2"] = ViewBag.sesion;
+            //ViewBag.otrasesion = Session["sesion2"];
             return View();
         }
     }

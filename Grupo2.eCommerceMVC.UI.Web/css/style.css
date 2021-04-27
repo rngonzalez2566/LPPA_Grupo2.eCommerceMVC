@@ -107,5 +107,14 @@ body{
                 color: #76F16E;
               }
 
+              #logout{
+                  display: none;
+              }
 
+              #panel{
+                  display: none;
+              }
 
+              #usuario{
+                  display: none;
+              }

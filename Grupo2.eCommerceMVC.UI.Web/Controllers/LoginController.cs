@@ -16,6 +16,7 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
         [HttpGet]
         public ActionResult Index(string returnUrl)
         {
+            Session["sesion"] = "No logueado";
             var model = new LoginModel
             {
                 ReturnUrl = returnUrl
@@ -41,6 +42,8 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
                 IOwinContext ctx = Request.GetOwinContext();
                 IAuthenticationManager authManager = ctx.Authentication;
                 authManager.SignIn(identity);
+                Session["sesion"] = "Logueado";
+                ViewBag.sesion = Session["sesion"];
                 return Redirect(GetRedirectUrl(model.ReturnUrl));
             }
             ModelState.AddModelError("", "El correo electrónico o la contraseña no son válidos.");

@@ -1,3 +1,4 @@
+@model Grupo2.eCommerceMVC.UI.Web.Models.LoginModel
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,15 +13,15 @@
 
 
 </head>
-<body>  
+<body>
     <div class="Conteiner">
-        
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand border-end border-white border-3 rounded-end p-3" href="./index.html">                
-                <img src="~/Images/logo.png" alt="" width="80" height="80">
-                NAME FOOD   
-            </a>
+                <a class="navbar-brand border-end border-white border-3 rounded-end p-3" href="./index.html">
+                    <img src="~/Images/logo.png" alt="" width="80" height="80">
+                    NAME FOOD
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,7 +29,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Carrito(0)</a>
-                        </li>  
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Categorias</a>
                         </li>
@@ -36,137 +37,144 @@
                             <a class="nav-link" href="#">Comprar</a>
                         </li>
                     </ul>
-                </div>  
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item px-1">
-                            <a class="nav-link active" aria-current="page" href="~/Panel/Index">Panel</a>
+                            <a class="nav-link active" aria-current="page" id="panel" href="~/Panel/Index">Panel</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link active" aria-current="page" href="~/Registro/index">Registro</a>
+                            <a class="nav-link active" aria-current="page" id="registro" href="~/Registro/index">Registro</a>
+                        </li>
+                        <li class="nav-item login">
+                            <a class="nav-link" href="~/Login/index" id="login">Ingresar</a>
+                        </li>
+                        <li class="nav-item logout" id="logout">
+                            <a class="nav-link" href="@Url.Action("Logout", "Login")">Logout</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/Login/index">Ingresar</a>
+                            <a class="nav-link" href="#" id="usuario">@User.Identity.Name</a>
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </nav>
 
-        
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">                
-                <div class="carousel-inner">
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="~/Images/imagen1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <img src="~/Images/imagen2.jpg" class="d-block w-100" alt="...">
                 </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            </button>
+        </div>
 
-        </div>   
-        
-        <section class="conteiner" id="galeria"> 
+    </div>
 
-            <div class="text-light text-center pt-4">
-                <h1>CATEGORÍAS</h1>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque facilis esse, ut dolores officia eius cupiditate! Eligendi animi ducimus quis, nulla, earum reprehenderit asperiores et quod mollitia, consectetur neque?</P>
-            </div>
+    <section class="conteiner" id="galeria">
 
-            <div class="row gy-2">
+        <div class="text-light text-center pt-4">
+            <h1>CATEGORÍAS</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque facilis esse, ut dolores officia eius cupiditate! Eligendi animi ducimus quis, nulla, earum reprehenderit asperiores et quod mollitia, consectetur neque?</P>
+        </div>
 
-                <div class="col-lg-3 col-6 text-center">
-                    <div class="card text-white bg-secondary mb-3 border-warning border-3" >
-                        <div class="card-body p-2"><a class ="a-link" href="#"><h5 class="card-title text-center">Lácteos</h5></a></div>
-                        <img class="card-img-bottom" src="~/Images/Lacteos.jpg" alt="Card image cap">
-                    </div>             
-                </div>       
-                
-                <div class="col-lg-3 col-6 text-center">
-                    <div class="card text-white bg-secondary mb-3 border-warning border-3">
-                        <div class="card-body p-2"><a class ="a-link" href="#"><h5 class="card-title text-center">Carnes</h5></a></div>
-                        <img class="card-img-bottom" src="~/Images/Carnes.jpeg" alt="Card image cap">
-                    </div>             
-                </div>   
+        <div class="row gy-2">
 
-                <div class="col-lg-3 col-6 text-center">
-                    <div class="card text-white bg-secondary mb-3 border-warning border-3">
-                        <div class="card-body p-2"><a class ="a-link" href="#"><h5 class="card-title text-center">Panadería</h5></a></div>
-                        <img class="card-img-bottom" src="~/Images/Panaderia.jpg" alt="Card image cap">
-                    </div>             
-                </div>   
-
-                <div class="col-lg-3 col-6 text-center">
-                    <div class="card text-white bg-secondary mb-3 border-warning border-3">
-                        <div class="card-body p-2"><a class ="a-link" href="#"><h5 class="card-title text-center">Verdulería</h5></a></div>
-                        <img class="card-img-bottom" src="~/Images/Frutas_verduras.jpg" alt="Card image cap">
-                    </div>             
-                </div>   
-
-            </div>
-
-        </section>
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Ubicación</h4>
-                        <p class="lead mb-0">
-                           HIPÓLITO YRIGOYEN, 218
-                            <br />
-                            LOMAS DE ZAMORA, CP 1832
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Redes Sociales</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Acerca de Nosotros</h4>
-                        <p class="lead mb-0">
-                            Alumnos de la UAI para el trabajo final de lenguajes de programación para la administración.
-                        </p>
-                    </div>
+            <div class="col-lg-3 col-6 text-center">
+                <div class="card text-white bg-secondary mb-3 border-warning border-3">
+                    <div class="card-body p-2"><a class="a-link" href="#"><h5 class="card-title text-center">Lácteos</h5></a></div>
+                    <img class="card-img-bottom" src="~/Images/Lacteos.jpg" alt="Card image cap">
                 </div>
             </div>
-        </footer>
 
-            <!-- Copyright Section-->
-            <div class="copyright py-4 text-center text-white">
-                <div class="container"><small>Copyright © LPPA 2021</small></div>
+            <div class="col-lg-3 col-6 text-center">
+                <div class="card text-white bg-secondary mb-3 border-warning border-3">
+                    <div class="card-body p-2"><a class="a-link" href="#"><h5 class="card-title text-center">Carnes</h5></a></div>
+                    <img class="card-img-bottom" src="~/Images/Carnes.jpeg" alt="Card image cap">
+                </div>
             </div>
 
+            <div class="col-lg-3 col-6 text-center">
+                <div class="card text-white bg-secondary mb-3 border-warning border-3">
+                    <div class="card-body p-2"><a class="a-link" href="#"><h5 class="card-title text-center">Panadería</h5></a></div>
+                    <img class="card-img-bottom" src="~/Images/Panaderia.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+                <div class="card text-white bg-secondary mb-3 border-warning border-3">
+                    <div class="card-body p-2"><a class="a-link" href="#"><h5 class="card-title text-center">Verdulería</h5></a></div>
+                    <img class="card-img-bottom" src="~/Images/Frutas_verduras.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Ubicación</h4>
+                    <p class="lead mb-0">
+                        HIPÓLITO YRIGOYEN, 218
+                        <br />
+                        LOMAS DE ZAMORA, CP 1832
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-instagram"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Acerca de Nosotros</h4>
+                    <p class="lead mb-0">
+                        Alumnos de la UAI para el trabajo final de lenguajes de programación para la administración.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright © LPPA 2021</small></div>
+    </div>
 
 
+
+    <script src="~/js/main.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).scroll(function(){
-            if($(document).scrollTop() > 100){
+        $(document).scroll(function () {
+            if ($(document).scrollTop() > 100) {
                 $('nav').addClass('animate');
-             
-               
-            }else{
+
+
+            } else {
                 $('nav').removeClass('animate');
             }
-            })
+        })
     </script>
 
 </body>
