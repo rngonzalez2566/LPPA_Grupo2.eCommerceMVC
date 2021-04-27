@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #191919!important;
+}
+               
+               .navbar{
+                padding: 20px 10px 20px 0px;
+               
+               
+                transition: all ease 0.4s;
+                }
+                .navbar-brand{
+                font-size: 22px;
+                color: white !important;
+                }
+                .navbar .navbar-nav li a{
+                font-size: 16px;
+                color: white;
+                }
+                
+                /* Animation */
+                .animate{
+                padding: 0px 10px 0px 0px !important;
+                transition: all ease 0.45s !important;
+                }
+
+                body .animate1{
+                    margin-top: 0px !important;
+                }
+            
+                /* Jumbotron */
+                .jumbotron{
+                margin-top: 110px;
+                }
+             
+
+                body {
+                    margin-top: 150px !important;
+                   
+                }
+                
+                .nav-link:hover {
+                    color: #76F16E !important;
+                }
+
+                .navbar-brand:hover {
+                    color: #76F16E !important;
+                }
+              
+             #galeria img:hover{
+                 border: 5px solid #282525!important;
+                 transition: all 0.2s ease-in!important;
+             }
+             #galeria .row{
+                margin: 5px!important;
+             }
+
+             .footer {
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+                background-color: #191919;
+                color: #fff;
+              }
+
+              .btn-social {
+                border-radius: 100%;
+                display: inline-flex;
+                width: 3.25rem;
+                height: 3.25rem;
+                font-size: 1.25rem;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .btn-social:hover {
+                  color: #76F16E !important;
+              }
+              
+             .copyright {
+                background-color: #191919;
+              }
+
+              .card-body{
+                background-color: #282525 !important;
+              }
+
+              .border-warning{
+                border-color: #282525!important;
+              }
+
+              .navbar-dark{
+                background-color: #282525 !important;
+              }
+
+              .a-link{
+                text-decoration: none;
+                color: white;
+              }
+
+              .a-link:hover{
+                text-decoration: none;
+                color: #76F16E;
+              }
+
+
+
