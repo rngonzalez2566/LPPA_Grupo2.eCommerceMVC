@@ -43,6 +43,7 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
                 IAuthenticationManager authManager = ctx.Authentication;
                 authManager.SignIn(identity);
                 Session["sesion"] = "Logueado";
+                ViewData["Prueba"] = "Logueado";
                 ViewBag.sesion = Session["sesion"];
                 return Redirect(GetRedirectUrl(model.ReturnUrl));
             }

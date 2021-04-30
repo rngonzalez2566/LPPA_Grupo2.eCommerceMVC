@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
+    <Content Include="css\style_contacto.css" />
     <Content Include="css\style_login_registro.css" />
     <Content Include="css\style_panel.css" />
     <Content Include="Global.asax" />
@@ -133,6 +134,7 @@
     <None Include="Views\Login\index.cshtml" />
     <None Include="Views\Registro\index.cshtml" />
     <Content Include="js\main.js" />
+    <None Include="Views\Contacto\index.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +142,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\ContactoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\PanelController.cs" />
