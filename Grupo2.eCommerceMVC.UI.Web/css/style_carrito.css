@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #191919!important;
+}
+               
+               
+               .navbar{
+                padding: 20px 10px 20px 0px;
+               
+               
+                transition: all ease 0.4s;
+                }
+                .navbar-brand{
+                font-size: 22px;
+                color: white !important;
+                }
+                .navbar .navbar-nav li a{
+                font-size: 16px;
+                color: white;
+                }
+                .animate{
+                    padding: 0px 10px 0px 0px !important;
+                    transition: all ease 0.45s !important;
+                    }
+    
+                    body .animate1{
+                        margin-top: 0px !important;
+                    }
+                 
+    
+                    body {
+                        margin-top: 150px !important;
+                       
+                    }
+                    
+                    .nav-link:hover {
+                        color: #76F16E !important;
+                    }
+    
+                    .navbar-brand:hover {
+                        color: #76F16E !important;
+                    }
+
+
+.cart .table{
+    margin-bottom: 30px;
+    border-right: 2.5px solid #282828;
+}
+
+.table tr td{
+    border: 2px solid #292b2c !important;
+}
+
+.cart .table thead tr th{
+    border-top:0px;
+    font-size:16px;
+    font-weight: bold;
+    border-bottom:0px;
+}
+.cart .table thead tr td{
+    padding-top:30px;
+    padding-bottom: 30px;
+    vertical-align: middle;
+    align-self: center;
+}
+.cart .table tbody tr td .main .d-flex{
+    padding-right:30px;
+}
+.cart .table tbody tr td .main .d-flex img{
+    border-radius: 3px;
+    padding-right: 10px;
+}
+.cart .table tbody tr td .main .des{
+    vertical-align: middle;
+    align-self: center;
+}
+.cart .table tbody tr td .main .des p{
+    margin-bottom:0px;
+}
+.cart .table tbody tr td h6{
+    font-size:16px;
+    color:white;
+    margin-bottom: 0px;
+}
+.cart .table tbody tr td .counter{
+    margin-bottom:0px;
+}
+.counter i{
+    border: 1px solid #282828;
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+}
+.cart .table tbody tr td .counter input{
+    width: 72px;
+    padding-left:30px;
+    height: 48px;
+    outline:none;
+    box-shadow: none;
+    color: black;
+}
+.checkout ul{
+    border: 2.5px solid #282828;
+    background: #292b2c;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:16px;
+    padding-bottom: 20px;
+}
+.checkout ul li{
+    list-style: none;
+    font-size:16px;
+    font-weight: bold;
+    color: #282828;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: white;
+}
+.checkout ul li.subtotal{
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom:2px solid #fff;
+    padding-bottom: 14px;
+}
+.checkout ul li.subtotal span{
+    font-weight: bold;
+}
+.checkout ul li.cart-total{
+    padding-top: 10px
+}
+.checkout ul li.cart-total span{
+    color:#e7ab3c;
+}
+.checkout ul li span{
+    float:right;
+}
+.checkout .proceed-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#292b2c;
+    text-transform: uppercase;
+    padding:15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #373737;
+}
+
+
+.eliminar-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#292b2c;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 28px;
+    margin-top: 8px;
+    border: 1px solid #373737;
+}
+
+.eliminartodo-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#292b2c;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border: 1px solid #373737;
+}
+
+.proceed-btn:hover{
+    background-color: #76F16E !important;
+}
+
+.eliminar-btn:hover{
+    background-color: #76F16E !important;
+}
+
+.eliminartodo-btn:hover{
+    background-color: #76F16E !important;
+}

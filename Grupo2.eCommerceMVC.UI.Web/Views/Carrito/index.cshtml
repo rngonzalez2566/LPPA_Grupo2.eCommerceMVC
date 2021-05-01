@@ -1,0 +1,236 @@
+@model Grupo2.eCommerceMVC.UI.Web.Models.LoginModel
+
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Carrito</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="~/css/style_carrito.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand border-end border-white border-3 rounded-end p-3" href="~/Home/index">
+                    <img src="~/Images/logo.png" alt="" width="80" height="80">
+                    NAME FOOD
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Carrito(12)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comprar</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item px-1">
+                            <a class="nav-link active" aria-current="page" id="panel" href="~/Panel/Index">Panel</a>
+                        </li>
+                        <li class="nav-item logout" id="logout">
+                            <a class="nav-link" href="@Url.Action("Logout", "Login" )">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Contacto/index" id="usuario">@User.Identity.Name</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </section>
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="cart">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="text-white">Producto</th>
+                                <th scope="col" class="text-white">Precio</th>
+                                <th scope="col" class="text-white">Cantidad</th>
+                                <th scope="col" class="text-white">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                            <img src="~/images/carrito-1.png" alt="" width="70" height="60">Leche
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$95.00</h6>
+                                </td>
+                                <td>
+                                    <div class="counter">
+                                        <i class="fas fa-angle-down"></i>
+                                        <input class="input-number" type="text"
+                                               value="1" min="0" max="10">
+                                        <i class="fas fa-angle-up"></i>
+                                        <button class="eliminar-btn">Eliminar</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$95.00</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                            <img src="~/images/carrito-2.png" alt="" width="70" height="60">Carne
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$240.00</h6>
+                                </td>
+                                <td>
+                                    <div class="counter">
+                                        <i class="fas fa-angle-down"></i>
+                                        <input class="input-number" type="text"
+                                               value="2" min="0" max="10">
+                                        <i class="fas fa-angle-up"></i>
+                                        <button class="eliminar-btn">Eliminar</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$480.00</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                            <img src="~/images/carrito-3.png" alt="" width="70" height="60">Tomate
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$15.00</h6>
+                                </td>
+                                <td>
+                                    <div class="counter">
+                                        <i class="fas fa-angle-down"></i>
+                                        <input class="input-number" type="text"
+                                               value="5" min="0" max="10">
+                                        <i class="fas fa-angle-up"></i>
+                                        <button class="eliminar-btn">Eliminar</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$75.00</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                            <img src="~/images/carrito-4.png" alt="" width="70" height="60">Pan lactal
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$120.00</h6>
+                                </td>
+                                <td>
+                                    <div class="counter">
+                                        <i class="fas fa-angle-down"></i>
+                                        <input class="input-number" type="text"
+                                               value="2" min="0" max="10">
+                                        <i class="fas fa-angle-up"></i>
+                                        <button class="eliminar-btn">Eliminar</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$240.00</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="main">
+                                        <div class="d-flex">
+                                            <img src="~/images/carrito-5.png" alt="" width="70" height="60">Lechuga
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$60.00</h6>
+                                </td>
+                                <td>
+                                    <div class="counter">
+                                        <i class="fas fa-angle-down"></i>
+                                        <input class="input-number" type="text"
+                                               value="2" min="0" max="10">
+                                        <i class="fas fa-angle-up"></i>
+                                        <button class="eliminar-btn">Eliminar</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h6>$120.00</h6>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button class="eliminartodo-btn">Vaciar carrito</button>
+        </div>
+    </section>
+    <div class="col-lg-4 offset-lg-4">
+        <div class="checkout">
+            <ul>
+                <li class="subtotal">
+                    subtotal
+                    <span>$1010.00</span>
+                </li>
+                <li class="cart-total">
+                    Total
+                    <span>$1010.00</span>
+                </li>
+            </ul>
+            <a href="#" class="proceed-btn">REALIZAR COMPRA</a>
+        </div>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('animate');
+
+
+            } else {
+                $('nav').removeClass('animate');
+            }
+        })
+    </script>
+</body>
+</html>
