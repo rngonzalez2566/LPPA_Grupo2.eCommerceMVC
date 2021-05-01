@@ -4,8 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
-    background-color: #191919!important;
+body {
+    background-color: #191919 !important;
 }
                
                .navbar{
@@ -85,17 +85,17 @@ body{
                 background-color: #191919;
               }
 
-              .card-body{
-                background-color: #282525 !important;
-              }
+.card-body {
+    background-color: #373737 !important;
+}
 
-              .border-warning{
-                border-color: #282525!important;
-              }
+.border-warning {
+    border-color: #373737 !important;
+}
 
-              .navbar-dark{
-                background-color: #282525 !important;
-              }
+.navbar-dark {
+    background-color: #292b2c !important;
+}
 
               .a-link{
                 text-decoration: none;
