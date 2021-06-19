@@ -192,3 +192,7 @@ body{
 .eliminartodo-btn:hover{
     background-color: #76F16E !important;
 }
+
+.navbar-dark {
+    background-color: #292b2c !important;
+}

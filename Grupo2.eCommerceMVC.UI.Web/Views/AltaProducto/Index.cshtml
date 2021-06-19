@@ -1,0 +1,50 @@
+﻿@model IEnumerable<eCommerce.Data.Models.Categoria>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPanel.cshtml";
+}
+
+<h1>Alta Producto</h1>
+
+<form action="#" method="POST" class="row g-3">
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Nombre</label>
+        <input type="text" name="nombre" class="form-control" id="inputEmail4">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Precio</label>
+        <input type="text" name="precio" class="form-control" id="inputPassword4">
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputState" class="form-label">Categoria</label>
+        <select name="idCategoria1" id="selectCat" class="form-select" onchange="getSelectValue()">
+            <option selected>..Seleccionar</option>
+            @foreach (var item in Model)
+            {
+                <option value=@item.idCategoria id="option">@item.nombre</option>
+
+            }
+
+        </select>
+
+        <input style="display:none" type="text" name="idCategoria" class="form-control" id="aa">
+    </div>
+
+    <div class="col-md-6">
+        <label for="formFile" class="form-label">Imagen</label>
+        <input class="form-control" type="file" id="formFile">
+    </div>
+
+    <div class="col-md-4 row align-items-center">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
+
+<script>
+    function getSelectValue() {
+        var SelectedValue = document.getElementById("selectCat").value;
+        document.getElementById("aa").value = SelectedValue;     
+    }
+</script>

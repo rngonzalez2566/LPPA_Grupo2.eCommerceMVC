@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contacto.cs" />
     <Compile Include="Mapper_CabeceraPedido.cs" />
     <Compile Include="Mapper_Categoria.cs" />
     <Compile Include="Mapper_Contacto.cs" />
@@ -50,6 +51,16 @@
     <Compile Include="Mapper_Provincia.cs" />
     <Compile Include="Mapper_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grupo2.eCommerceMVC.Data\Grupo2.eCommerceMVC.Data.csproj">
+      <Project>{c59562b9-54b8-4fc4-8f8a-81ecbd912581}</Project>
+      <Name>Grupo2.eCommerceMVC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Grupo2.eCommerceMVC.Entities\Grupo2.eCommerceMVC.Entities.csproj">
+      <Project>{e502dc2c-5ffe-4990-8690-f7a751ee02aa}</Project>
+      <Name>Grupo2.eCommerceMVC.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

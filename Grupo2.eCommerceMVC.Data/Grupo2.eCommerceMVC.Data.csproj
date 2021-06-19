@@ -52,5 +52,11 @@
     <Compile Include="Provincia.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grupo2.eCommerceMVC.Entities\Grupo2.eCommerceMVC.Entities.csproj">
+      <Project>{e502dc2c-5ffe-4990-8690-f7a751ee02aa}</Project>
+      <Name>Grupo2.eCommerceMVC.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

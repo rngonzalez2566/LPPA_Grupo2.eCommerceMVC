@@ -137,7 +137,9 @@
     <Content Include="images\logo.png" />
     <Content Include="images\Panaderia.jpg" />
     <Content Include="js\jquery-3.6.0.min.js" />
+    <Content Include="Views\AltaProducto\Index.cshtml" />
     <None Include="Views\Login\index.cshtml" />
+    <Content Include="Views\Panel\Index.cshtml" />
     <None Include="Views\Registro\index.cshtml" />
     <Content Include="js\main.js" />
     <None Include="Views\Contacto\index.cshtml" />
@@ -148,6 +150,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AltaProductoController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\ContactoController.cs" />
@@ -166,7 +169,7 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Home\index.cshtml" />
-    <Content Include="Views\Panel\index.cshtml" />
+    <Content Include="Views\Shared\_LayoutPanel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -177,6 +180,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Base\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grupo2.eCommerceMVC.Business\Grupo2.eCommerceMVC.Business.csproj">
+      <Project>{6d9ffe08-b493-4b54-852c-77a0a29abea6}</Project>
+      <Name>Grupo2.eCommerceMVC.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Grupo2.eCommerceMVC.Entities\Grupo2.eCommerceMVC.Entities.csproj">
+      <Project>{E502DC2C-5FFE-4990-8690-F7A751EE02AA}</Project>
+      <Name>Grupo2.eCommerceMVC.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
