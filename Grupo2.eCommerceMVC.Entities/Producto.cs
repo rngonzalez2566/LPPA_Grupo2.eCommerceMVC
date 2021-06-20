@@ -10,8 +10,9 @@ namespace eCommerce.Data.Models
     public class Producto
     {
         public int idProducto { get; set; }      
-        public string nombre { get; set; }        
+        public string nombre { get; set; }
         public int idCategoria { get; set; }
+        //public virtual Categoria Categoria { get; set; }
         public float precio { get; set; }
     }
 }

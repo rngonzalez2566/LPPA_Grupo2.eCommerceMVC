@@ -13,7 +13,7 @@ namespace eCommerce.DAL
         DAL.Acceso Acceso = new Acceso();  
         public IList<Data.Models.Categoria> TraerCategorias()
         {
-            var Consulta = "SELECT * FROM Categoria";
+            var Consulta = "SELECT * FROM Categorias";
             DataTable dt = Acceso.GenerarConsulta(Consulta);
             var lista = new List<Data.Models.Categoria>();
 

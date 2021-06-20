@@ -29,7 +29,7 @@ namespace Grupo2.eCommerceMVC.UI.Web.Controllers
             eCommerce.BLL.Mapper_Producto prod = new eCommerce.BLL.Mapper_Producto();            
             
             prod.AltaProducto(model);
-            return View();
+            return RedirectToAction("Index");
         }
     }
 }

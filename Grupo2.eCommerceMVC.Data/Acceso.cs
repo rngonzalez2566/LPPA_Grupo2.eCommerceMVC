@@ -11,7 +11,7 @@ namespace eCommerce.DAL
     public class Acceso
     {
         SqlConnection CN = new SqlConnection();
-        string conexion = @"Data Source = DESKTOP-4MA82S7\SQLEXPRESS; Initial Catalog = eCommerce_Restaurante; Integrated Security = True"; // cadena de conexión JOAQUIN
+        string conexion = @"Data Source = DESKTOP-40SC102\SQLEXPRESS; Initial Catalog = eCommerce_Restaurante; Integrated Security = True"; // cadena de conexión JOAQUIN
         //string conexion = @""; // cadena de conexión RODRI
         //string conexion = @""; // cadena de conexión CASTA
         //string conexion = @""; // cadena de conexión RAMI

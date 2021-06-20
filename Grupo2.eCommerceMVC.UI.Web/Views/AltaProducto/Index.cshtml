@@ -19,7 +19,7 @@
 
     <div class="col-md-6">
         <label for="inputState" class="form-label">Categoria</label>
-        <select name="idCategoria1" id="selectCat" class="form-select" onchange="getSelectValue()">
+        <select name="idCategoria" id="selectCat" class="form-select" >
             <option selected>..Seleccionar</option>
             @foreach (var item in Model)
             {
@@ -29,7 +29,6 @@
 
         </select>
 
-        <input style="display:none" type="text" name="idCategoria" class="form-control" id="aa">
     </div>
 
     <div class="col-md-6">
@@ -42,9 +41,3 @@
     </div>
 </form>
 
-<script>
-    function getSelectValue() {
-        var SelectedValue = document.getElementById("selectCat").value;
-        document.getElementById("aa").value = SelectedValue;     
-    }
-</script>
